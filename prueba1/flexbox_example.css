@@ -1,0 +1,9 @@
+/* Estilos generados por el script Bash */
+.centered-box {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
