@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <style id="customStyles">
+    /* Estilos generados por el script Bash */
+  </style>
+</head>
+<body>
+  <script>
+    // JavaScript generado por el script Bash
+    document.addEventListener('DOMContentLoaded', function () {
+      const container = document.createElement('div');
+      container.classList.add('flex-container');
+
+      const item1 = document.createElement('div');
+      item1.classList.add('flex-item');
+      item1.textContent = '1';
+
+      const item2 = document.createElement('div');
+      item2.classList.add('flex-item');
+      item2.textContent = '2';
+
+      const centeredBox = document.createElement('div');
+      centeredBox.classList.add('centered-box');
+      centeredBox.textContent = 'Centered';
+
+      container.appendChild(item1);
+      container.appendChild(item2);
+      container.appendChild(centeredBox);
+
+      document.body.appendChild(container);
+
+      // Aplicar estilos adicionales desde el script
+      const customStyles = document.getElementById('customStyles');
+      customStyles.innerHTML = `
+        .${container.classList[0]} {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: flex-start;
+          align-items: stretch;
+          align-content: flex-start;
+          height: 300px;
+          border: 1px solid black;
+        }
+
+        .flex-item {
+          width: 100px;
+          height: 100px;
+          margin: 10px;
+          background-color: lightgray;
+        }
+
+        .centered-box {
+          width: 100px;
+          height: 100px;
+          background-color: lightblue;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      `;
+    });
+  </script>
+</body>
+</html>
